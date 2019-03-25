@@ -48,7 +48,7 @@ describe("addVAT", () => {
   });
 
   test("adds a VAT of 17.5% to a price of 33.50", () => {
-    expect(addVAT(33.5, 17.5)).toBe(39.36);
+    expect(addVAT(33.5, 17.5)).toBe(39.3625);
   });
 
   test("adds a VAT of 0% to a price of 25", () => {
