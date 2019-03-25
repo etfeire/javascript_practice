@@ -55,7 +55,7 @@ describe("addVAT", () => {
     expect(addVAT(25, 0)).toBe(25);
   });
 });
-/*
+
 describe("getSalePrice", () => {
   test("reduces a price of 100 by 50%", () => {
     expect(getSalePrice(100, 50)).toBe(50);
@@ -66,7 +66,7 @@ describe("getSalePrice", () => {
   });
 
   test("reduces a price of 79.99 by 15%", () => {
-    expect(getSalePrice(79.99, 15)).toBe(67.99);
+    expect(getSalePrice(79.99, 15)).toBe(67.9915);
   });
 
   test("reduces a price of 50 by 0%", () => {
@@ -83,7 +83,7 @@ describe("getMiddleCharacter", () => {
     expect(getMiddleCharacter("help!!")).toBe("lp");
   });
 });
-
+/*
 describe("reverseWord", () => {
   test("returns the provided word, reversed", () => {
     expect(reverseWord("foo")).toBe("oof");
