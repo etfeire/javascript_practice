@@ -107,7 +107,7 @@ describe("reverseAllWords", () => {
     ).toEqual(["tsej", "ahcom", "cepsr", "enimsaj", "muineles"]);
   });
 });
-/*
+
 describe("countLinuxUsers", () => {
   test("returns 0 if no Linux users found", () => {
     const users = [
@@ -132,7 +132,7 @@ describe("countLinuxUsers", () => {
     expect(countLinuxUsers(users)).toBe(5);
   });
 });
-
+/*
 describe("getMeanScore", () => {
   test("returns the mean score from an array of scores", () => {
     expect(getMeanScore([8, 9, 7])).toBe(8);
