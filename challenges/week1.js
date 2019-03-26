@@ -35,7 +35,7 @@ function reverseWord(word) {
 
 function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
-  // Add your code here!
+  else return words.split("").reverse().join("").split(" ").reverse().join(" ");
 }
 
 function countLinuxUsers(users) {

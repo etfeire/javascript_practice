@@ -95,19 +95,19 @@ describe("reverseWord", () => {
     );
   });
 });
-/*
+
 describe("reverseAllWords", () => {
   test("reverses a single word in an array", () => {
     expect(reverseAllWords(["jest"])).toEqual(["tsej"]);
   });
 
-  test("reverses a multiple words in an array", () => {
+  test("reverses multiple words in an array", () => {
     expect(
       reverseAllWords(["jest", "mocha", "rspec", "jasmine", "selenium"])
     ).toEqual(["tsej", "ahcom", "cepsr", "enimsaj", "muineles"]);
   });
 });
-
+/*
 describe("countLinuxUsers", () => {
   test("returns 0 if no Linux users found", () => {
     const users = [
