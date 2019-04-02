@@ -6,7 +6,7 @@ const {
   hasMPostCode
 } = require("../challenges/week2");
 
-/*describe("getFillings", () => {
+describe("getFillings", () => {
   test("returns the fillings of a sandwich", () => {
     const sandwich = {
       bread: "Sourdough",
@@ -23,7 +23,7 @@ const {
     expect(getFillings(sandwich2)).toEqual(["smoked salmon", "dill"]);
   });
 });
-
+/*
 describe("isFromManchester", () => {
   test("returns true if the person is from Manchester", () => {
     const person = {
