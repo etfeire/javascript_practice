@@ -143,7 +143,7 @@ describe("getMeanScore", () => {
     expect(getMeanScore([24, 44, 56, 11, 12, 17, 34])).toBe(28.29);
   });
 });
-/*
+
 describe("simpleFizzBuzz", () => {
   test("returns 'fizz' if the number is divisible by 3", () => {
     expect(simpleFizzBuzz(3)).toBe("fizz");
@@ -161,4 +161,3 @@ describe("simpleFizzBuzz", () => {
     expect(simpleFizzBuzz(15)).toBe("fizzbuzz");
   });
 });
-*/
