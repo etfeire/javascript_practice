@@ -23,7 +23,7 @@ describe("getFillings", () => {
     expect(getFillings(sandwich2)).toEqual(["smoked salmon", "dill"]);
   });
 });
-/*
+
 describe("isFromManchester", () => {
   test("returns true if the person is from Manchester", () => {
     const person = {
@@ -43,7 +43,7 @@ describe("isFromManchester", () => {
     expect(isFromManchester(person)).toBe(false);
   });
 });
-
+/*
 describe("getBusNumbers", () => {
   // A bus can hold 40 people. This function should return how many buses are required for the number of people
   test("returns 1 if all the people fit in 1 bus", () => {
