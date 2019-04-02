@@ -51,7 +51,12 @@ function countLinuxUsers(users) {
 
 function getMeanScore(scores) {
   if (scores === undefined) throw new Error("scores is required");
-  // Add your code here!
+    let sum = scores.reduce((previous, current) => current += previous);
+    let avg = sum / scores.length;
+    if (Number.isInteger(avg)) {
+      return avg;
+      };
+    return Number(avg.toFixed(2));
 }
 
 function simpleFizzBuzz(n) {
