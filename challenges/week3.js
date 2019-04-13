@@ -35,7 +35,13 @@ function checkIngredients(menu, ingredient) {
 function duplicateNumbers(arr1, arr2) {
   if (!arr1) throw new Error("arr1 is required");
   if (!arr2) throw new Error("arr2 is required");
-  // Your code here!
+  const objMap={};
+  arr1.forEach((e1)=>arr2.forEach((e2)=> {if(e1 === e2){
+       objMap[e1]=objMap[e1]+1||1 ;
+      }
+    }
+  ));
+  return Object.keys(objMap).map(e=>Number(e));
 }
 
 module.exports = {
