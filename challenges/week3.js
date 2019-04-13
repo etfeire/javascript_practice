@@ -15,14 +15,10 @@ function camelCaseWords(words) {
 
 function getTotalSubjects(people) {
   if (!people) throw new Error("people is required");
-  if (people.subjects === null) {
-    return 0;
-  }
-  const totalSubjects = [];
-  people.forEach(function () {
-    totalSubjects++;
-    return totalSubjects;
-  }); 
+  else var totalSubjects = people.reduce(function (n, person) {
+    return n + (person.subjects === "");
+  }, 0);
+  return totalSubjects;
 }
 
 function checkIngredients(menu, ingredient) {
