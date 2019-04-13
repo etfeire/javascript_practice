@@ -7,10 +7,10 @@ function getSquares(nums) {
 
 function camelCaseWords(words) {
   if (!words) throw new Error("words is required");
-  const joinedWords = words.forEach (function (word) {
+  const joinedWords = words.forEach(function (word) {
     return word[0] + word[1].toUpperCase() + word.slice(1).toLowerCase();
-    }).join('');
-  return joinedWords[0].toLowerCase()+joinedWords.substr(1);
+  }).join('');
+  return joinedWords[0].toLowerCase() + joinedWords.substr(1);
 }
 
 function getTotalSubjects(people) {
@@ -24,7 +24,12 @@ function getTotalSubjects(people) {
 function checkIngredients(menu, ingredient) {
   if (!menu) throw new Error("menu is required");
   if (!ingredient) throw new Error("ingredient is required");
-  // Your code here!
+  for (var i = 0; i < menu.length; ++i) {
+    if (menu[i].ingredients.includes(ingredient)) {
+      return true;
+    }
+    return false;
+  }
 }
 
 function duplicateNumbers(arr1, arr2) {
