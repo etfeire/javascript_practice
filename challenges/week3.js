@@ -24,12 +24,13 @@ function getTotalSubjects(people) {
 function checkIngredients(menu, ingredient) {
   if (!menu) throw new Error("menu is required");
   if (!ingredient) throw new Error("ingredient is required");
+  let foundIngredient = false;
   for (var i = 0; i < menu.length; ++i) {
     if (menu[i].ingredients.includes(ingredient)) {
-      return true;
+      foundIngredient = true;
     }
-    return false;
   }
+  return foundIngredient;
 }
 
 function duplicateNumbers(arr1, arr2) {
