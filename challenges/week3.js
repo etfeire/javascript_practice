@@ -7,10 +7,11 @@ function getSquares(nums) {
 
 function camelCaseWords(words) {
   if (!words) throw new Error("words is required");
-  const joinedWords = words.forEach(function (word) {
-    return word[0] + word[1].toUpperCase() + word.slice(1).toLowerCase();
+  const firstWord = words.splice(0,1);
+  const capWords = words.map(function (word) {
+  return word[0].toUpperCase() + word.slice(1);
   }).join('');
-  return joinedWords[0].toLowerCase() + joinedWords.substr(1);
+  return firstWord + capWords;
 }
 
 function getTotalSubjects(people) {

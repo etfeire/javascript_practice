@@ -44,7 +44,7 @@ describe("camelCaseWords", () => {
   });
 });
 
-describe("getTotalSubjects", () => {
+describe.only("getTotalSubjects", () => {
   test("returns 0 if no people have subjects", () => {
     const people = [
       { name: "Billy", subjects: [] },
@@ -73,7 +73,7 @@ describe("getTotalSubjects", () => {
   });
 });
 
-describe.only("checkIngredients", () => {
+describe("checkIngredients", () => {
   test("returns false if no menu items include the specified ingredient", () => {
     const menu = [
       {
