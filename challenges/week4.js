@@ -2,17 +2,23 @@ function findSmallNums(nums) {
   if (!nums) throw new Error("nums is required");
   const smallNums = [];
   for (let i = 0; i < nums.length; i++) {
-    const num = nums[i];
-    if (num < 1) {
-      smallNums.push(num);
+    if (nums[i] < 1) {
+      smallNums.push(nums[i]);
     };
   } return smallNums;
 }
 
+
 function findNamesBeginningWith(names, char) {
   if (!names) throw new Error("names is required");
   if (!char) throw new Error("char is required");
-  // Your code here
+  const newNames = [];
+  for (let i = 0; i < names.length; i++) {
+    const name = names[i];
+    if (name[0] === char) {
+      newNames.push(name);
+    }
+  }; return newNames;
 }
 
 function findVerbs(words) {
