@@ -52,7 +52,7 @@ describe("count1sand0s", () => {
   });
 });
 
-describe.only("reverseNumber", () => {
+describe("reverseNumber", () => {
   test("reverses the digits of a number", () => {
     expect(reverseNumber(5)).toBe(5);
     expect(reverseNumber(104)).toBe(401);
@@ -68,7 +68,7 @@ describe("sumArrays", () => {
   });
 });
 
-describe("arrShift", () => {
+describe.only("arrShift", () => {
   test("returns an array with the first and last items swapped", () => {
     expect(arrShift([1, 2])).toEqual([2, 1]);
     expect(arrShift([1, 2, 3])).toEqual([3, 2, 1]);

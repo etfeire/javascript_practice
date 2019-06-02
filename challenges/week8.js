@@ -35,13 +35,19 @@ const reverseNumber = n => {
 
 const sumArrays = arrs => {
   if (arrs === undefined) throw new Error("arrs is required");
-  // Your code here!
+  let sum = 0;
+  for (i = 0; i < arrs.length; i++) {
+    for (x = 0; x < arrs[i].length; x++) {sum += arrs[i][x]}
+  }; return sum;
 };
 
 const arrShift = arr => {
   if (arr === undefined) throw new Error("arr is required");
-  // Your code here!
+  if (arr.length < 2) {return arr};
+  [arr[0], arr[arr.length -1]] = [arr[arr.length -1], arr[0]];
+  return arr;
 };
+
 
 const findNeedle = (haystack, searchTerm) => {
   if (haystack === undefined) throw new Error("haystack is required");
