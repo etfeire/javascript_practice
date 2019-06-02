@@ -19,10 +19,10 @@ const count1sand0s = str => {
   };
   for (let i = 0; i < str.length; i++) {
     if (str[i] === "1") {
-      onesZeros[0]++;
+      onesZeros[1]++;
     }
     if (str[i] === "0") {
-      onesZeros[1]++; 
+      onesZeros[0]++; 
     }
   } return onesZeros;
 };
