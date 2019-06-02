@@ -17,14 +17,14 @@ const count1sand0s = str => {
     1: 0,
     0: 0
   };
-  for (i=0; i < str.length; i++) {
-    if (str[i] == 0) {
-      onesZeros[1]++; 
-    }
-    if (str[i] == 1) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "1") {
       onesZeros[0]++;
     }
-  }; return onesZeros;
+    if (str[i] === "0") {
+      onesZeros[1]++; 
+    }
+  } return onesZeros;
 };
 
 const reverseNumber = n => {
